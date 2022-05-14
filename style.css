@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  /* ## Layout */
+  /* The designs were created to the following widths: */
+  --width-device: 1440px;
+
+  /* ## Colors */
+
+  /* ### Primary */
+  --blue-face: hsl(246, 80%, 60%);
+  --red-work: hsl(15, 100%, 70%);
+  --blue-play: hsl(195, 74%, 62%);
+  --red-study: hsl(348, 100%, 68%);
+  --green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --orange-selfcare: hsl(43, 84%, 65%);
+
+  /* ### Neutral */
+  --blue-vdark: hsl(226, 43%, 10%);
+  --blue-dark: hsl(235, 46%, 20%);
+  --blue-desaturated: hsl(235, 45%, 61%);
+  --blue-pale: hsl(236, 100%, 87%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blue-vdark);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.backtext {
+  opacity: 60%;
+}
+
+.grid-container {
+  width: var(--width-device);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 240px));
+  grid-template-rows: repeat(2, 1fr);
+
+  gap: 1.5rem;
+
+  /* to be removed */
+  padding: 5rem;
+}
+
+.card-user-face,
+.card-activity {
+  background-color: var(--blue-face);
+}
+.card-user,
+.card-activity-face {
+  background-color: #1c204b;
+}
+.card-user,
+.card-user-face,
+.card-activity,
+.card-activity-face {
+  border-radius: 25px;
+}
+
+.card-user {
+  grid-area: 1 / 1 / 3 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 537px;
+}
+.card-user-face {
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+}
+.card-user-face .user-circle {
+  border-radius: 50%;
+  width: 78px;
+  height: 78px;
+  border: 2px solid aliceblue;
+  background-image: url(./images/image-jeremy.png);
+  background-position: center;
+  background-size: cover;
+}
+.card-user-face p {
+  margin: auto 0;
+}
+.card-user-face p .user-name {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.timeperiod-selection {
+  padding: 0 1.5rem;
+  height: 183px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.timeperiod-selection .active {
+  opacity: 100%;
+}
+.timeperiod-option:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+/* ACTIVITY CARDS */
+
+.card-activity-icon {
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 1rem;
+}
+.card-activity-face {
+  height: 205px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.card-activity-face:hover {
+  cursor: pointer;
+  background-color: hsla(235, 46%, 20%, 82%);
+}
+.card-activity-face .activity-hrs {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+.card-activity-face .activity-hrs-lastperiod {
+  font-size: 0.9rem;
+}
+.face-header {
+  display: flex;
+  font-weight: 600;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.face-header .ico-ellipsis {
+  width: 21px;
+  height: 5px;
+  background-image: url(./images/icon-ellipsis.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ICONS AND COLORS */
+
+#card-work {
+  background-color: var(--red-work);
+}
+#card-work .card-activity-icon {
+  background-image: url(./images/icon-work.svg);
+}
+#card-play {
+  background-color: var(--blue-play);
+}
+#card-play .card-activity-icon {
+  background-image: url(./images/icon-play.svg);
+}
+#card-study {
+  background-color: var(--red-study);
+}
+#card-study .card-activity-icon {
+  background-image: url(./images/icon-study.svg);
+}
+#card-exercise {
+  background-color: var(--green-exercise);
+}
+#card-exercise .card-activity-icon {
+  background-image: url(./images/icon-exercise.svg);
+}
+#card-social {
+  background-color: var(--violet-social);
+}
+#card-social .card-activity-icon {
+  background-image: url(./images/icon-social.svg);
+}
+
+#card-selfcare {
+  background-color: var(--orange-selfcare);
+}
+#card-selfcare .card-activity-icon {
+  background-image: url(./images/icon-self-care.svg);
+}

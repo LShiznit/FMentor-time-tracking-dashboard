@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- for MOBILES -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 767px)"
+      href="./mobile.css"
+    />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- USER CARD -->
+      <div class="card-user">
+        <div class="card-user-face">
+          <div class="user-circle"></div>
+          <p>
+            <span class="backtext">Report for</span> <br />
+            <span class="user-name">Jeremy Robson</span>
+          </p>
+        </div>
+        <div class="timeperiod-selection">
+          <div id="option-daily" class="timeperiod-option active backtext">
+            Daily
+          </div>
+          <div id="option-weekly" class="timeperiod-option backtext">
+            Weekly
+          </div>
+          <div id="option-monthly" class="timeperiod-option backtext">
+            Monthly
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVITY CARDS -->
+      <!-- .............. -->
+
+      <!-- WORK -->
+      <div id="card-work" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Work</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">32hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 36hrs</p>
+        </div>
+      </div>
+      <!-- PLAY -->
+      <div id="card-play" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Play</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">10hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 8hrs</p>
+        </div>
+      </div>
+
+      <!-- Study -->
+      <div id="card-study" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Study</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">4hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 7hrs</p>
+        </div>
+      </div>
+      <!-- Exercise -->
+      <div id="card-exercise" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Exercise</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">4hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 5hrs</p>
+        </div>
+      </div>
+      <!-- Social -->
+      <div id="card-social" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Social</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">5hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 10hrs</p>
+        </div>
+      </div>
+      <!-- Self Care -->
+      <div id="card-selfcare" class="card-activity">
+        <div class="card-activity-icon"></div>
+        <div class="card-activity-face">
+          <div class="face-header">
+            <p>Self Care</p>
+            <div class="ico-ellipsis"></div>
+          </div>
+          <p class="activity-hrs">2hrs</p>
+          <p class="activity-hrs-lastperiod backtext">Last Week - 2hrs</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

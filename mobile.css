@@ -1,0 +1,74 @@
+:root {
+  --width-device: 750px;
+}
+
+html,
+body {
+  height: 110vh;
+}
+.grid-container {
+  height: 100vh;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 500px));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  padding: 2rem;
+}
+.card-user {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: unset;
+}
+.card-user-face {
+  height: 150px;
+  flex-direction: row;
+  padding: 1.5rem;
+  justify-content: unset;
+  align-items: center;
+}
+.card-user-face .user-circle {
+  width: 64px;
+  height: 64px;
+}
+.card-user-face p {
+  padding-left: 1rem;
+  margin: unset;
+}
+.card-user-face p .user-name {
+  font-size: 1.6rem;
+}
+.timeperiod-selection {
+  padding: 1rem 1.5rem;
+  height: 60px;
+  flex-direction: row;
+}
+
+/* ACTIVITY CARDS */
+
+.card-activity-icon {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 1rem;
+}
+.card-activity-face {
+  height: 150px;
+  padding: 1.5rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.card-activity-face .activity-hrs {
+  flex-basis: 50%;
+  font-size: 2rem;
+}
+.card-activity-face .activity-hrs-lastperiod {
+  flex-basis: 50%;
+  text-align: right;
+  font-size: 0.9rem;
+}
+.face-header {
+  flex-basis: 100%;
+  font-size: 1.2rem;
+  align-items: center;
+}
